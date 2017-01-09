@@ -1,0 +1,23 @@
+﻿This app is for demostration purpose only. All the code provided is written by myself. Sorry for mix of Russian and English in documentation
+
+DESCRIPTION:
+Czech national bank publishes its rates as a text file at following URI:
+https://www.cnb.cz/en/financial_markets/foreign_exchange_market/exchange_rate_fixing/year.txt?year=2017 (year number is a parameter and may be changed)
+first line of this file contains currencies' names and quantities, other lines contain date (one per line) and rates for this date.
+
+FUNCTIONALITY:
+1) Load into memory data for any desired year (that is available, of course) - file lines may be processed using multiple threads
+2) Print rates for any date (if there's no rates for some date app tries to print latest rates for this date).
+
+------------------------------------------------------
+
+Данное приложение явялется демонстрационным. Весь код написан мной лично. Прошу прощения за смесь русского и английского в документации.
+
+ОПИСАНИЕ:
+Чешский национальный банк публикует свои валютные курсы в виде текстового файла по следующему URI:
+https://www.cnb.cz/en/financial_markets/foreign_exchange_market/exchange_rate_fixing/year.txt?year=2017 (номер года является параметром и может быть изменён)
+первая строка файла содержит наименования валют и их количества, последующие строки содержат дату (одна строка - одна дата) и курсы на данный день.
+
+ФУНКЦИОНАЛЬНОСТЬ:
+1) Загрузите в память данные по любому году (по которому данные доступны, разумеется) - строки файла могут быть обработаны с использованием нескольких потоков
+2) Выведите на экран курсы валют на любую дату (если на дату нет курса, приложение попытается вывести последние курсы на дату).
